@@ -1,0 +1,89 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  margin-bottom: 30px;
+  font-family: "EB Garamond", serif;
+}
+
+.description {
+  margin-bottom: 80px;
+  font-size: 18px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.brandShowcaseContainer {
+  margin: 0 auto;
+  max-width: 800px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.brand {
+  display: grid;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.brandImageContainer {
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.brandImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: scale 100ms ease;
+}
+
+.brandImage:hover {
+  scale: 1.2;
+  transition: scale 200ms ease;
+}
+
+.brandDescription {
+  padding: 0 10px;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ctaBuy {
+  font-size: 14px;
+  display: flex;
+  text-decoration: none;
+  width: fit-content;
+  margin: 10px auto;
+  color: black;
+  background-color: antiquewhite;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.ctaBuy:hover {
+  transition: background-color 200ms;
+  background-color: rgb(221, 208, 190);
+}
+
+.shopNow {
+  composes: ctaBuy;
+  border: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  margin-top: 40px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.myApp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.nav-bar {
+  margin-bottom: 70px;
+}
+
+.footer {
+  margin-top: auto;
+}

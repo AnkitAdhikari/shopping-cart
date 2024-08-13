@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navFlexGap {
+  gap: 15px;
+}
+
+.brandLogo {
+  width: 46px;
+  height: auto;
+}
+
+.brand {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+}
+
+.cart {
+  composes: navLink;
+  display: flex;
+  align-items: center;
+}
+
+.brandContainer {
+  composes: navFlexGap;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  composes: navFlexGap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
