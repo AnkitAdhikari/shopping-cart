@@ -1,0 +1,25 @@
+.checkout {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* .checkoutSide {
+  display: flex;
+  align-items: center;
+} */
+
+.checkoutBtn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(89, 212, 89);
+}
+
+.checkoutBtn:hover {
+  cursor: pointer;
+  background-color: rgb(106, 221, 71);
+}

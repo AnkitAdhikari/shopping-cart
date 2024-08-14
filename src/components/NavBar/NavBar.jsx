@@ -17,6 +17,9 @@ const NavBar = ({ itemsOnCart = 0 }) => {
           <Link className={styles.navLink} to='all-products'>
             All Products
           </Link>
+          <Link className={styles.navLink} to='/'>
+            Home
+          </Link>
           <Link className={styles.navLink} to='about'>
             About
           </Link>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-const URL = "https://dummyjson.com/products";
 const useFetch = (extra = "") => {
+  const URL = "https://dummyjson.com/products";
   const [products, setProducts] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);

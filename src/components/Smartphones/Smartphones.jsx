@@ -1,5 +1,9 @@
 import useFetch from "../../services/useFetch";
+import Product from "../Product/Product";
+import styles from "../AllProducts/AllProducts.module.css";
+import { useOutletContext } from "react-router-dom";
 const Smartphones = () => {
+  const [cart, setCart] = useOutletContext();
   const { products, loading, error } = useFetch("/category/smartphones");
 
   if (loading) {
@@ -20,14 +24,20 @@ const Smartphones = () => {
     return (
       <>
         <h1>Welcome to smartphone shop</h1>
-        {products.map((product) => {
-          return (
-            <div key={product.id}>
-              <h2>{product.title}</h2>
-              <img src={product.thumbnail} alt={product.title} />
-            </div>
-          );
-        })}
+        <div className={styles.products}>
+          {products.map((product) => (
+            <Product
+              id={product.id}
+              setCart={setCart}
+              cart={cart}
+              imgURL={product.thumbnail}
+              name={product.title}
+              stock={product.stock}
+              price={product.price}
+              key={product.id}
+            />
+          ))}
+        </div>
       </>
     );
   }
